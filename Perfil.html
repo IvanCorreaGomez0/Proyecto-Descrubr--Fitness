@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Perfil-estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Perfil</title>
+</head>
+<body>
+    <div class="padre">
+    <!-- ______________HEADER__________________________-->    
+        <header class="header">
+            
+            <div class="logo">
+                <img src="/imgTP/barra-con-pesas.png" alt="logo" >
+            </div>
+
+            <div class="titulo">
+                <h1>Perfil del Usuario</h1>
+            </div>
+
+        </header>
+        <!-- _________________MAIN_______________________-->
+        <main class="main">
+
+            <nav class="nav">
+                <ul class="ul2">
+                    <li><a href="/Descubri-Fitness.html">Descubrí</a></li>
+                    <li><a href="/Entrená.html">Entrena</a></li>
+                    <li><a href="#">Plan</a></li>
+                    <li><a href="#">Evolución</a></li>
+                    <li><a href="/Contacto.html">Contacto</a></li>   
+                </ul>
+            </nav>
+
+            <div class="form-Perfil">
+                
+                <form action="https://formspree.io/f/mrgvvpny" method="POST">
+                    <h1>Registro de Perfil</h1>
+                    <label for="firstname">Nombre:</label><input size="30" type="text" name="firstname" id="firstname" size="10" maxlength="20" placeholder="Ingrese su nombre aqui...">
+                    <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname" id="lastname" size="10"  maxlength="20"  placeholder="Ingrese su apellido aqui..."> 
+                        <br><br>
+
+                    <label for="street">Direccion:</label><input type="text" name="street" id="street" size="10" maxlength="20" placeholder="Ingrese su dirección aqui...">
+                    <label for="number">Numero:</label><input type="number" name="number" id="number" size="5" maxlength="5" placeholder="Ingrese el numero..">
+                    <br><br>
+                    <label for="city">Ciudad: </label><input type="text" name="city" maxlength="20" placeholder="Ingrese su Ciudad.."> 
+                    <label for="zipcode">Código Postal:</label><input type="text" name="zipcode" id="zipcode" size="10" maxlength="15" placeholder="Ingrese su codigo postal aqui..."> 
+                        <br> <br>
+
+                    <label for="cel">Celular: </label> <input type="tel" name="cel" id="cel" size="10" maxlength="15" placeholder="ingrese su nro aqui ...."> <br><br>
+
+                    <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label> <input type="date" name="birthdate">
+                    <br><br>
+
+                    <label for="mail">Mail: </label><input type="email" name="mail" id="mail" maxlength="25" placeholder="ingrese su mail aqui ...."> 
+                    <br><br>
+                    
+
+                    <h1> Datos Biométricos</h1>
+                    <br>
+                    <label for="edad">Edad (años):</label> <input type="number" name="edad" id="edad" maxlength="3">
+                    <br><br>
+                    <label for="Género">Género</label>
+                    <select id="Género" name="Género">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="no_contesta">No deseo contestar</option>
+                    </select>
+                    <br><br>
+                    <label for="talla">Talla (cm):</label> <input type="number" name="talla" id="talla" size="5" maxlength="3"> 
+                    <label for="peso">Peso (kg):</label> <input type="number" name="peso" id="peso" size="5" maxlength="3"> 
+                    <br><br>
+                    <label for="IMC">Indice de Masa Corporal IMC:</label> <input type="number" name="IMC" id="peso" size="3" maxlength="2"> 
+                    <br><br>
+                
+                    
+                    <label for="Hombro">Perímetro de Hombros (cm):</label> <input type="number" name="Hombro" id="Hombro" size="3" maxlength="3"> 
+                    <label for="Cintura">Perímetro de Cintura (cm):</label> <input type="number" name="Cintura" id="Cintura" size="3" maxlength="3"> 
+                    <br><br>
+                    <label for="Cadera">Perímetro de Cadera (cm):</label> <input type="number" name="Cadera" id="CaderaD size="3" maxlength="3">
+                    <label for="Muñeca">Perímetro de Muñeca (cm):</label> <input type="number" name="Muñeca" id="Muñeca" size="3" maxlength="3">
+                    
+                    <br><br>
+                    <label for="Cant-Entren">Cantidad de sesiones de entrenamiento por semana:</label> <input type="number" name="Cant-Entren" id="Cant-Entren" size="3" maxlength="3">
+                    <br><br>
+
+                    <label for="Rendimiento">Nivel de entrenamiento: (Select)</label>
+                    <select id="Rendimiento" name="Rendimiento">
+                        <option value="iniciado">Iniciado</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="avanzado">Avanzado</option>
+                        <option value="elite">Elite</option>
+                    </select>
+                    <br><br>
+                    
+                    <h1>Enumera tus espectativas de logro:</h1>
+                    <h2>Bajar de peso, aumentar masa muscular, lo que quieras...</h2>
+                    <label for="comentarios">:</label> <textarea name="comentarios" rows="10" cols="100" class="comentario1"></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+
+        </main>
+<!-- ________________________________________-->
+<footer class="footer">
+            
+    <nav class="nav-redes"> 
+        <a href="https://twitter.com/?lang=es" target="_blank"><img src="/imgTP/twitter.png" alt="twitter" ></a></li>
+        <a href="https://www.instagram.com/" target="_blank"><img src="/imgTP/instagram.png" alt="instagram"></a></li>
+        <a href="https://es-la.facebook.com/" target="_blank"><img src="/imgTP/facebook.png" alt="facebook"></a></li>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="/imgTP/whatsapp.png" alt="whatsapp"></a></li>
+    </nav>
+
+
+<h3>Compartí contenido con tus amigos y profesores</h2>
+<p>Derechos reservados @2023 </p>
+</footer>
+
+</div>
+
+<script>
+    const $form = document.querySelector("#form")
+    $form.addEventListener("submit", handlesubmit)
+    async function handlesubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            "Accept": "aplication/jason"
+        }
+    })
+    if (response.ok) {
+        this.reset()
+        alert("gracias por contactarme, te escribiré pronto. :)")
+    }
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+*{
+    margin: 0vw;
+    padding: 0vw;
+    box-sizing: border-box; /*border box toma al conetnido de la caja con el padding y el borde pero no conel margin*/
+    font-family: 'Roboto', sans-serif;}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;}
+
+
+/*_______________Header______________________________________*/
+.header{
+        margin: 1vw 1vw 0vw 1vw;
+        padding: 1vw;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(black, #4091ec); 
+        color: white;}
+
+    .header div img {width: 100%;}
+  
+        .logo{
+            display: flex;
+            align-items: flex-start;
+            flex: 1 1;
+            margin: 1vw; }
+
+        .titulo{
+            display: flex;
+            justify-content: flex-start;
+            flex: 12 1;
+            margin: 1vw;
+            padding-left: 10vw;
+            font-size: 2.5vw;
+            font-weight: bold;
+            font-style: italic;}
+
+        /*________________Main____________________________________*/
+.main{
+        margin: 0vw 1vw 1vw 1vw;
+        display: flex;
+        flex-flow: column nowrap;
+        background: linear-gradient(black, #4091ec);}
+    
+        .nav{
+            display: flex;
+            justify-content: flex-end;
+            margin: 0vw;
+            padding: 0.5vw;
+            display: flex;
+            background: linear-gradient(#4091ec,black); 
+            position: sticky;
+            top: 0;}
+
+            .nav ul{
+                display: flex;
+                flex-flow: row nowrap;}
+
+                    .nav ul li {
+                        list-style: none;
+                        margin-left: 1vw;
+                        padding: 0.5vw;
+                        background: linear-gradient(white , #4091ec);
+                        border-radius: 1vw;   
+                        box-shadow: 1px 1px;}
+
+                    .nav ul li:hover{
+                        background: linear-gradient(rgb(56, 54, 54) , #4091ec); 
+                        box-shadow: 4px 4px;}
+
+                    .nav ul li a{
+                        text-decoration: none;  
+                        font-size: 1.5vw;}
+
+                    .nav ul li a:hover{
+                        color: white; 
+                        font-weight: bold;}
+/*_______________________ Aside ____Slider_______________________________*/
+        .slider{
+            width: 50vw;
+            height: auto;
+            margin: 0 auto 0;
+            overflow: hidden;}
+
+            .slider ul{
+                display: flex;
+                animation: cambio 16s infinite alternate linear;
+                width: 400%;}
+
+            .slider li{
+                list-style: none;
+                width: 100vw;}
+
+            .slider img{
+                width: 50vw;
+                height: auto;}
+
+            @keyframes cambio {
+                0% {margin-left: 0%;}
+                20% {margin-left: 0%;}
+                
+                25% {margin-left: -100%;}
+                45% {margin-left: -100%;}
+            
+                50% {margin-left: -200%;}
+                70% {margin-left: -200%;}
+
+                75% {margin-left: -300%;}
+                100% {margin-left: -300%;}
+            }
+
+/*_______________________Section_______________________________*/
+        .section{ background-color: whitesmoke;}
+
+            .articulos{
+                display: flex;
+                flex-flow: column nowrap;
+                display: flex;
+                flex-flow: row nowrap;}
+                .article{
+                    margin: 0.5vw;
+                    padding: 0.5vw;
+                    flex: 1 1 50%;
+                    background: white;}
+
+                    .article h1{
+                        font-size: 1.4vw;
+                        font-weight: bold;}
+
+                    .article p{
+                        font-size: 1.2vw;}
+
+            .box-eframes{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                width: 100%;
+                background-color: white;
+            }
+            
+            .titulos2 {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                color: whitesmoke;
+                width: 100%;
+                font-size: 2vw;} 
+    /*_____________________EFRAME_____________________________*/
+            .eframe{
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .eframe iframe{ margin: 0.1vw;}
+
+    /*______________Footer_____________________________*/
+.footer{
+        margin: 1vw;
+        padding: 1vw;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        background:whitesmoke;}
+
+.footer h3, p{font-size: 2vw;}
+    .nav-redes{padding-left: 40vw;}
+
+    .footer nav img {width: 3%;}
+        
+/*__________________MEDIA QWERY_________________________*/
+
+    @media only screen and (max-width: 600px){
+        
+
+        .aside{order: 1;}
+        .section{ order: 2;}
+        .box-eframes{ order: 3;}
+        .nav{
+            order: 4;
+            display: flex;
+            justify-content: center;}
+       
+        .articulos{
+            display: flex;
+            flex-flow: column nowrap;}
+    
+
+        .nav ul li a{ font-size: 3vw;}
+
+        .footer nav img {width: 8%;}
+        }
+    
+    
+
+@media only screen and (min-width: 600px){
+    .nav ul li a{ font-size: 2.5vw; }
+    .footer nav img {width: 5%;}
+}
+
+@media only screen and (min-width: 800px){
+    .nav ul li a{ font-size: 2vw; }
+    .footer nav img {width: 3%;}
+}
+
+@media only screen and (min-width: 1000px){
+    .nav ul li a{ font-size: 1.5vw; }
+}

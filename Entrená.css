@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #DBDBDB ; /**/
+    font-family: 'Open Sans', sans-serif;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;}
+
+
+/*_______________Header______________________________________*/
+.header{
+        margin: 1vw 1vw 0vw 1vw;
+        padding: 1vw;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(black, #4091ec); 
+        color: white;}
+
+    .header div img {width: 100%;}
+  
+        .logo{
+            display: flex;
+            align-items: flex-start;
+            flex: 1 1;
+            margin: 1vw; }
+
+        .titulo{
+            display: flex;
+            justify-content: flex-start;
+            flex: 12 1;
+            margin: 1vw;
+            padding-left: 10vw;
+            font-size: 2.5vw;
+            font-weight: bold;
+            font-style: italic;}
+
+        /*________________Main____________________________________*/
+.main{
+        margin: 0vw 1vw 1vw 1vw;
+        position: sticky;
+        top: 0;
+       }
+    
+        .nav{
+            display: flex;
+            justify-content: flex-end;
+            margin: 0vw;
+            padding: 0.5vw;
+            background: linear-gradient(#4091ec,black); 
+           
+        }
+
+            .nav ul{
+                display: flex;
+                flex-flow: row nowrap;}
+
+                    .nav ul li {
+                        list-style: none;
+                        margin-left: 1vw;
+                        padding: 0.5vw;
+                        background: linear-gradient(white , #4091ec);
+                        border-radius: 1vw;   
+                        box-shadow: 1px 1px;}
+
+                    .nav ul li:hover{
+                        background: linear-gradient(rgb(56, 54, 54) , #4091ec); 
+                        box-shadow: 4px 4px;}
+
+                    .nav ul li a{
+                        text-decoration: none;  
+                        font-size: 1.5vw;}
+
+                    .nav ul li a:hover{
+                        color: white; 
+                        font-weight: bold;}
+
+ /*____________________Section Principal _____________ */
+.seccionPrincipal{
+  
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1vw;
+}
+
+/*___________________________Cronometro_____________________*/
+
+   .watch {
+    text-align: center;
+    background-color: #4091ec;
+    
+}
+
+.time {
+    font-size: 3vw;
+    font-weight: 400;  
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    appearance: none;
+    background: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+
+    color: black;
+    font-size: 1.5vw;
+    background-color: aliceblue;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    transition: 0.4s;
+}
+
+.controls button:hover {
+    background-color: #fff;
+}
+
+
+/*____________ planner______________________*/
+.planner{
+    display: flex;
+    flex-flow: row nowrap;  
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+   
+   
+
+}
+.imgInfo{
+    display: flex;
+    width: 20%;
+    padding: 1vw;
+    margin: 0.5vw 1vw;
+    box-shadow: 0px 0px 0px 1px #000;
+}
+
+.imgInfo img{
+    width: 100%;
+    height: auto;
+}
+
+.tables{
+    
+    width: 80vw;
+    padding: 0.5vw;
+    margin: 0.5vw;
+   
+    
+}
+
+.tables label, input{
+    font-size: 1,3vw;
+    font-weight: bold;
+    width: 15%;
+}
+
+/*______________comunidad ___________________________________*/
+.comunidad {
+    width: 100%;
+
+    background-color: #ede8e8;
+}
+.contenedor {
+    width: 100%;
+    background-color: rgb(255, 255, 255); /* */
+    text-align: center;
+    align-items: center;
+}
+
+.contenedor h2, p{
+    color: rgb(17, 22, 37);
+    font-size: 1vw;
+}
+
+
+
+.contenedor img {
+    border-radius: 50%;
+    width: 10vw;
+}
+
+.comunidad h1 {
+    background-color: #4091ec;
+    text-align: center;
+    color: aliceblue;
+    margin: 1px;
+    font-size: 2vw;
+}
+
+.btn {
+    margin-top: 1vw;
+    border: none;
+    background: #4091ec;
+    color: #fff;
+    padding: 1vw 1vw;
+    cursor: pointer;
+    border-radius: 1vw;
+    transition: all ease 400ms;
+}
+
+.btn:hover {
+    background-color: #337186;
+}
+
+
+    /*______________Footer_____________________________*/
+    .footer{
+        margin: 1vw;
+        padding: 1vw;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        background:whitesmoke;}
+
+.footer h3, p{font-size: 2vw;}
+    .nav-redes{padding-left: 40vw;}
+
+    .footer nav img {width: 3%;}
+        

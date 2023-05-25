@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5bc8f77558.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Contacto.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <div class="padre">
+         <!-- ___________HEADER_____________________________-->    
+         <header class="header">
+            
+            <div class="logo">
+                <img src="/imgTP/barra-con-pesas.png" alt="logo" >
+            </div>
+
+            <div class="titulo">
+                <h1>Contactanos</h1>
+            </div>
+
+        </header>
+   <!-- _____________MAIN___________________________-->
+       <main class="main">
+
+            <nav class="nav">
+                <ul class="ul2">
+                    <li><a href="/Descubri-Fitness.html">Descubri</a></li>
+                    <li><a href="/Entrená.html">Entrena</a></li>
+                    <li><a href="#">Plan</a></li>
+                    <li><a href="#">Evoluci</a></li>
+                    <li><a href="/Perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
+        </main>
+
+
+<!-- _______________DIV IVAN_________________________--> 
+        <div class="Ivan">
+
+            <section class="form_wrap">
+
+                <section class="form_info">
+                    <section class="info_tittle">
+                        <span class="fa fa-dumbbell"></span>
+                        <h2>INFORMACION<br>DE CONTACTO</h2>
+                    </section>
+                    <section class="info_items">
+                        <p><span class="fa-solid fa-envelope">    Info.contact@gmail.com</span></p>
+                        <p><span class="fa fa-mobile">  11 764 90174</span></p>
+                    </section>
+                </section>
+
+                <form action="https://formspree.io/f/mrgvvpny" method="POST" class="formulario"> 
+
+                    <h2>Contactá a nuestros entrenadores</h2>
+
+                    <div class="userInfo">
+
+                        <label for="">Nombre*</label>
+                        <input type="text" name="name" id="name" placeholder="Ingresá tu nombre">
+
+                        <label for="">Telefono/celular*</label>
+                        <input type="tel" name="phone" id="phone" maxlength="11" placeholder="123 456 7890">
+
+                        <label for="">Correo electronico*</label>
+                        <input type="text" name="mail" id="mail" placeholder="Ingresá tu correo">
+
+                        <label for="">Dejanos tu consulta</label>
+                        <textarea id="mensaje"></textarea>
+
+                        <input type="submit" name="btn_send" id="btn_send" value="Enviar">
+
+                    </div>
+                </form>
+
+            </section>
+
+        </div>
+        <!-- _____________FIN DIV IVAN___________________________--> 
+
+            <!-- _________FOOTER_______________________________-->
+        <footer class="footer">
+            
+            <nav class="nav-redes"> 
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="/imgTP/twitter.png" alt="twitter" ></a></li>
+                <a href="https://www.instagram.com/" target="_blank"><img src="/imgTP/instagram.png" alt="instagram"></a></li>
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="/imgTP/facebook.png" alt="facebook"></a></li>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="/imgTP/whatsapp.png" alt="whatsapp"></a></li>
+            </nav>
+       
+      
+        <h3>Compartí contenido con tus amigos y profesores</h2>
+        <p>Derechos reservados @2023 </p>
+    </footer>
+
+    </div>
+
+    <script>
+        const $form = document.querySelector("#form")
+        $form.addEventListener("submit", handlesubmit)
+        async function handlesubmit(event) {
+        event.preventDefault()
+        const form = new FormData(this)
+        const response = await fetch(this.action, {
+            method: this.method,
+            body: form,
+            headers: {
+                "Accept": "aplication/jason"
+            }
+        })
+        if (response.ok) {
+            this.reset()
+            alert("gracias por contactarme, te escribiré pronto. :)")
+        }
+    }
+    </script>
+    
+    <script src="Formulario.js"></script>
+
+</body>
+
+</html>
